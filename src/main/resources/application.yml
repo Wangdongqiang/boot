@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.20.232:3306/sys?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC #mysql8
+    username: root
+    password: root@1109
+  aop:
+    auto: true #启动aop配置
+  thymeleaf:
+    cache: false  #关闭页面缓存
+    prefix:
+      classpath: /templates/  #thymeleaf访问根路径
+    mode: HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+  mvc:
+    date-format: yyyy-MM-dd HH:mm:ss #mvc接收参数时对日期进行格式化
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss #jackson对响应回去的日期参数进行格式化
+    time-zone: GMT+8
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+#设置静态资源路径，多个以逗号分隔
+  resources:
+    static-locations: classpath:static/
