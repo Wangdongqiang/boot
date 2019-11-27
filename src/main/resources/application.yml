@@ -27,3 +27,9 @@ spring:
 #设置静态资源路径，多个以逗号分隔
   resources:
     static-locations: classpath:static/
+
+logging:
+  level:
+    com:
+      framework:
+        boot: debug

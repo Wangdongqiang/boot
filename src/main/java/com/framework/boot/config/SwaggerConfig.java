@@ -18,15 +18,15 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .pathMapping("/")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.demo.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.framework.boot.controller"))
                 .paths(PathSelectors.any())
                 .build().apiInfo(new ApiInfoBuilder()
-                        .title("SpringBoot整合Swagger")
-                        .description("SpringBoot整合Swagger，详细信息......")
-                        .version("9.0")
-                        .contact(new Contact("啊啊啊啊","blog.csdn.net","aaa@gmail.com"))
+                        .title("Swagger")
+                        .description("详细信息")
+                        .version("1.0")
+                        .contact(new Contact("github","https://github.com/Wangdongqiang/boot.git","421362700@qq.com"))
                         .license("The Apache License")
-                        .licenseUrl("http://www.javaboy.org")
+                        .licenseUrl("http://www.License.org")
                         .build());
     }
 }
