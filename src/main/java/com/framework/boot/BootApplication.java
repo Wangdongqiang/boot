@@ -10,7 +10,6 @@ public class BootApplication {
 	// 日志记录工具
 	private static final Logger logger = LoggerFactory.getLogger(BootApplication.class);
 	public static void main(String[] args) {
-		logger.info("》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》");
 		SpringApplication.run(BootApplication.class, args);
 		logger.info("《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《");
 	}
